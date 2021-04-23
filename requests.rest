@@ -1,0 +1,39 @@
+GET http://localhost:3000/posts
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikt5bGVAZ21haWwuY29tIiwiaWF0IjoxNjE5MTk2MzU4LCJleHAiOjE2MTkxOTY0MTh9.ztvLwF-hz1lYURs1Q4MYV6THA1hkjqhAu-_6kzU9D-k
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email": "Kyle@gmail.com",
+    "password": "abc"
+}
+
+###
+
+POST http://localhost:4000/auth/register
+Content-Type: application/json
+
+{
+    "email": "Kyle@gmail.com",
+    "password": "abc"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikt5bGVAZ21haWwuY29tIiwiaWF0IjoxNjE5MTk2MzczfQ.qSN3UYCFa8hFeo_Q9ItUVGZVMwSDHWBU8PHJT8uNSoE"
+}
+
+###
+
+DELETE  http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikt5bGVAZ21haWwuY29tIiwiaWF0IjoxNjE5MTk2MzczfQ.qSN3UYCFa8hFeo_Q9ItUVGZVMwSDHWBU8PHJT8uNSoE"
+}
