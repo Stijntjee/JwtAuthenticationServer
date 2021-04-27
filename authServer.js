@@ -64,6 +64,6 @@ app.use("/auth", authenticationRouter);
   console.log("HTTP Server running on port 80");
 });*/
 
-httpsServer.listen(443, () => {
+httpsServer.listen(port, () => {
   console.log("HTTPS Server running on port 443");
 });
