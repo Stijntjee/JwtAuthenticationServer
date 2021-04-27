@@ -12,7 +12,7 @@ const http = require("http");
 const https = require("https");
 
 const privateKey = fs.readFileSync(
-  "/etc/letsencrypt/live/litwick/privkey.pem",
+  "/etc/letsencrypt/live/litwick.be/privkey.pem",
   "utf8"
 );
 const certificate = fs.readFileSync(
