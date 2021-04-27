@@ -16,11 +16,11 @@ const privateKey = fs.readFileSync(
   "utf8"
 );
 const certificate = fs.readFileSync(
-  "/etc/letsencrypt/live/litwick/cert.pem",
+  "/etc/letsencrypt/live/litwick.be/cert.pem",
   "utf8"
 );
 const ca = fs.readFileSync(
-  "/etc/letsencrypt/live/yourdomain.com/chain.pem",
+  "/etc/letsencrypt/live/litwick.be/chain.pem",
   "utf8"
 );
 
