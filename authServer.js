@@ -60,6 +60,10 @@ db.once("open", () => console.log("Connected to Mongoose"));
 app.use("/", indexRouter);
 app.use("/auth", authenticationRouter);
 
-app.listen(port, () => {
-  console.log("NodeJs app listening at port " + port);
+httpServer.listen(80, () => {
+  console.log("HTTP Server running on port 80");
+});
+
+httpsServer.listen(443, () => {
+  console.log("HTTPS Server running on port 443");
 });
